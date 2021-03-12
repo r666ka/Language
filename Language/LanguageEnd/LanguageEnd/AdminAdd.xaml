@@ -1,0 +1,124 @@
+﻿<Window x:Class="LanguageEnd.AdminAdd"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:LanguageEnd"
+        mc:Ignorable="d"
+       Title="AddDirector" Height="825" Width="797"
+        WindowStartupLocation="CenterScreen">
+    <Grid
+        Background="white">
+
+        <Image
+            Source="Resources/school_logo.png" 
+            Margin="10,701,690,10">
+        </Image>
+
+        <TextBlock
+            FontFamily="Comic Sans MS"
+            FontSize="50" 
+            Margin="292,64,281,654"
+            HorizontalAlignment="Center"
+            Foreground="#FF04A0FF">
+           Лангуаге
+
+        </TextBlock>
+
+        <TextBox 
+            Margin="140,246,406,514"
+            x:Name="Familiy"
+            FontFamily="Comic Sans MS"
+            Text="Введите Фамилию"
+            FontSize="20"
+            MouseDoubleClick="TextBox_MouseDoubleClick_1" >
+        </TextBox>
+
+        <TextBox 
+            Margin="418,246,113,514"
+            x:Name="Imy"
+            FontFamily="Comic Sans MS"
+            Text="Введите Имя"
+            FontSize="20" RenderTransformOrigin="0.484,-0.299"
+            MouseDoubleClick="TextBox_MouseDoubleClick_imy">
+        </TextBox>
+
+        <TextBox 
+            Margin="139,434,113,326"
+            x:Name="Nomer"
+            FontFamily="Comic Sans MS"
+            Text="Введите номер телефона"
+            FontSize="20"
+            MouseDoubleClick="TextBox_MouseDoubleClick_nomer">
+        </TextBox>
+
+        <TextBox 
+            Margin="139,498,113,262"
+            x:Name="Pol"
+            FontFamily="Comic Sans MS"
+            Text="Введите пол"
+            FontSize="20"
+            MouseDoubleClick="TextBox_MouseDoubleClick_pol">
+        </TextBox>
+
+        <TextBox 
+            Margin="139,563,113,197"
+            x:Name="Data"
+            FontFamily="Comic Sans MS"
+            Text="Дата рождения"
+            FontSize="20"
+            MouseDoubleClick="TextBox_MouseDoubleClick_Data">
+        </TextBox>
+
+        <TextBox 
+            Margin="139,629,113,131"
+            x:Name="DataRegister"
+            FontFamily="Comic Sans MS"
+            Text="Дата регистрации"
+            FontSize="20"
+            MouseDoubleClick="TextBox_MouseDoubleClick_dataregister">
+        </TextBox>
+
+
+        <TextBox 
+            Margin="140,372,112,388"
+            x:Name="Mail"
+            FontFamily="Comic Sans MS"
+            Text="Введите Email"
+            FontSize="20"
+            MouseDoubleClick="TextBox_MouseDoubleClick_mail">
+        </TextBox>
+
+        <TextBox 
+            Margin="139,310,113,450"
+            x:Name="Otchestvo"
+            FontFamily="Comic Sans MS"
+            Text="Введите Отчество"
+            FontSize="20"
+            MouseDoubleClick="TextBox_MouseDoubleClick_otchestvo">
+        </TextBox>
+
+        <Button 
+            Margin="690,747,10,10"
+            x:Name="back"
+            Content="Назад"
+            FontFamily="Comic Sans MS"
+            FontSize="20"
+            Background="#FFE7FABF"
+            Foreground="#FF04A0FF" Click="back_Click" 
+           >
+        </Button>
+
+        <Button 
+            Margin="314,729,299,29"
+            x:Name="AddId"
+            Content="Внести"
+            FontFamily="Comic Sans MS"
+            FontSize="20"
+            Background="#FFE7FABF" 
+            RenderTransformOrigin="0.5,0.5"
+            Foreground="#FF04A0FF" Click="AddId_Click" >
+        </Button>
+
+    </Grid>
+</Window>
